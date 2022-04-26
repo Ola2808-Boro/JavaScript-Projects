@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200;1,300;1,500;1,600&display=swap");
+:root {
+  --backgroundColorApp: rgba(206, 109, 170, 0.6);
+  --headlineColor: rgb(205, 0, 157);
+  --placeholderColor: rgb(134, 134, 134);
+  --completedColor: rgb(171, 171, 171);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: var(--backgroundColorApp);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 100vh;
+}
+
+h1 {
+  font-size: 8rem;
+  color: var(--headlineColor);
+  opacity: 0.5;
+  text-align: center;
+}
+
+form {
+  width: 400px;
+  max-width: 100%;
+  margin-top: 4rem;
+}
+
+form input {
+  width: 100%;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.5rem;
+}
+
+form input::-webkit-input-placeholder {
+  color: var(--placeholderColor);
+}
+
+form input:-ms-input-placeholder {
+  color: var(--placeholderColor);
+}
+
+form input::-ms-input-placeholder {
+  color: var(--placeholderColor);
+}
+
+form input::placeholder {
+  color: var(--placeholderColor);
+}
+
+form ul {
+  list-style-type: none;
+  font-size: 1.5rem;
+  background-color: white;
+}
+
+form ul li {
+  border-top: 1px solid #acacac;
+  padding: 1rem 2rem;
+}
+
+small {
+  margin-top: 1rem;
+  display: block;
+  font-size: 1rem;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
