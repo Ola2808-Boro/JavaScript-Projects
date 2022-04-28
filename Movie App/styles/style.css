@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,200;1,300;1,500;1,600&display=swap");
+:root {
+  --backgroundColorApp: rgb(19, 0, 116);
+  --backgroundColorMovieinfo: rgb(72, 83, 241);
+  --colorMovieInfo: rgb(255,255,255);
+  --colorPlaceholder:rgb(80, 80, 80);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--backgroundColorApp);
+}
+
+body header {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body header form input {
+  font-size: 20px;
+  padding: 0.8rem 2rem;
+  border-radius: 10px;
+  border: none;
+}
+
+body header form .input::-webkit-input-placeholder {
+  color: var(--colorPlaceholder);
+}
+
+body header form .input:-ms-input-placeholder {
+  color: var(--colorPlaceholder);
+}
+
+body header form .input::-ms-input-placeholder {
+  color: var(--colorPlaceholder);
+}
+
+body header form .input::placeholder {
+  color: var(--colorPlaceholder);
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .movie {
+  position: relative;
+  overflow: hidden;
+  margin: 2rem 3rem;
+  width: 300px;
+  height: 500px;
+  background-color: antiquewhite;
+}
+
+body main .movie .img {
+  width: 100%;
+  height: 85%;
+}
+
+body main .movie .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main .movie .movie-info {
+  background-color: var(--backgroundColorMovieinfo);
+  color: var(--colorMovieInfo);
+  width: 100%;
+  height: 15%;
+  padding: 1rem 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .movie .movie-info h3 {
+  font-size: 1.3rem;
+}
+
+body main .movie .movie-info span {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.green {
+  color: #64f218;
+}
+
+.red {
+  color: red;
+}
+
+.orange {
+  color: orange;
+}
+
+.overview {
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 2rem;
+  position: absolute;
+  height: 500px;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+.overview h2 {
+  margin-bottom: 0.5rem;
+}
+
+.overview h3 {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.movie:hover .overview {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+/*# sourceMappingURL=style.css.map */
